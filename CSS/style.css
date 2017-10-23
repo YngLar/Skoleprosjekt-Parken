@@ -8,7 +8,7 @@
 #wrapper {
     /*Grid*/
     display: grid;
-    grid-template-rows: 70px 62px fit-content(100%) 200px;
+    grid-template-rows: 30px 68px fit-content(100%) 200px;
     grid-template-areas: "h"
                          "n"
                          "m"
@@ -16,6 +16,7 @@
 }
 header{
     grid-area: h;
+    background-color: #26A69A;
 }
 nav{
     grid-area: n;
@@ -34,8 +35,9 @@ nav li a{
     display: inline-block;
     background-color: #009688;
     color: white;
-    font-size: 25px;
+    font-size: 4vw;
     padding: 14px 16px;
+    padding-top: 6px;
     text-decoration: none;
     height: auto;
 }
@@ -54,30 +56,30 @@ main #coverbilde img{
     height: auto;
 }
 main #coverbilde h1{
+    display: block;
     top: 17%; 
     bottom: 60%;
     left: auto;
-    right: 5%;
+    right: 0%;
     width: 40%; 
     position: absolute;
     background: none;
     font-size: 4vw;
 }
 main span{
+    display: block;
     color: white; 
     letter-spacing: -1px;  
-    background: rgb(0, 0, 0); /* fallback color */
+    background: rgb(0, 0, 0); 
     background: rgba(0, 0, 0, 0.7);
+    padding-right: 20px;
     padding-left: 20px;
-    padding-bottom: 0px;
-    padding-top: 0px;
-    padding-right: 100%;
 }
 
 main #tekst{
-    margin-left: 8%;
-    margin-right: 8%;
-    font-size: 2vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 2vw;
     font-size: 2vmin;
 
 }
