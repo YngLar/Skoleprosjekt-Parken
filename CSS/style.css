@@ -8,7 +8,7 @@
 #wrapper {
     /*Grid*/
     display: grid;
-    grid-template-rows: 30px 7vw fit-content(100%) 200px;
+    grid-template-rows: 30px 62px 1100px 100px;
     grid-template-areas: "h"
                          "n"
                          "m"
@@ -89,7 +89,7 @@ footer{
 }
 @media (min-width: 1000px) {
     #wrapper {
-       grid-template-rows: 30px 62px fit-content(100%) 200px;
+       grid-template-rows: 30px 62px 1100px 100px;
     }
     nav li a {
        font-size: 34px;
