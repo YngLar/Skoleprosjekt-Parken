@@ -8,7 +8,7 @@
 #wrapper {
     /*Grid*/
     display: grid;
-    grid-template-rows: 30px 62px 1100px 100px;
+    grid-template-rows: auto auto auto 100px;
     grid-template-areas: "h"
                          "n"
                          "m"
@@ -17,6 +17,35 @@
 header{
     grid-area: h;
     background-color: #26A69A;
+}
+header #coverbilde{
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0;
+    background-color: #26A69A;
+}
+header #coverbilde img{
+    width: 100%;
+    height: auto;
+}
+header #coverbilde h1{
+    display: block;
+    top: 15%; 
+    left: auto;
+    right: 0%;
+    width: 40%; 
+    position: absolute;
+    background: none;
+    font-size: 4vw;
+}
+header span{
+    display: block;
+    color: white; 
+    letter-spacing: -1px;  
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.7);
+    padding-right: 20px;
+    padding-left: 20px;
 }
 nav{
     grid-area: n;
@@ -47,36 +76,7 @@ nav li a:hover{
 }
 main{
     grid-area: m;
-    height: 900px;
 }
-main #container{
-    position: relative;
-}
-main #coverbilde img{
-    width: 100%;
-    height: auto;
-}
-main #coverbilde h1{
-    display: block;
-    top: 17%; 
-    bottom: 60%;
-    left: auto;
-    right: 0%;
-    width: 40%; 
-    position: absolute;
-    background: none;
-    font-size: 4vw;
-}
-main span{
-    display: block;
-    color: white; 
-    letter-spacing: -1px;  
-    background: rgb(0, 0, 0); 
-    background: rgba(0, 0, 0, 0.7);
-    padding-right: 20px;
-    padding-left: 20px;
-}
-
 main #tekst{
     margin-left: 10%;
     margin-right: 10%;
@@ -89,7 +89,7 @@ footer{
 }
 @media (min-width: 1000px) {
     #wrapper {
-       grid-template-rows: 30px 62px 1100px 100px;
+       grid-template-rows: auto auto auto 100px;
     }
     nav li a {
        font-size: 34px;
