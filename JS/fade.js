@@ -1,8 +1,11 @@
-/// Scroll fade in when 100px from the top 
+
 $(window).scroll(function() {
-    if ($(this).scrollTop()> 300) {
+
+    if ($(this).scrollTop()> $(".parkenbilde").height()) {
     $('nav').fadeIn();
-    } else {
+    }
+
+    else {
     $('.scrolltop').fadeOut();
     }
  });
