@@ -1,0 +1,17 @@
+main{
+    text-align: center;
+    margin-top: 100px;
+}
+main #overskrift {
+    font-size: 40px;
+    padding-bottom: 100px;
+}
+main img{
+    float: left;
+    margin-left: 200px;
+    border-radius: 10%;
+}
+main #overskrift-artist{
+    padding-left: 40px;
+    font-size: 25px;
+}
