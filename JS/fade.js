@@ -9,3 +9,6 @@ $(window).scroll(function() {
     $('.scrolltop').fadeOut();
     }
  });
+ $(window).scroll(function(){
+    $("#coverbilde").css("opacity", 1 - $(window).scrollTop() / $(".parkenbilde").height());
+  });

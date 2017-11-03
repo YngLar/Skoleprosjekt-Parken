@@ -17,12 +17,13 @@
 header{
     grid-area: h;
     display: flex;
+    background-color: #009688;
 }
 header #coverbilde{
     position: relative;
     margin-top: 0px;
     margin-bottom: 0;
-    background-color: #26A69A;
+    background-color: rgb(6, 29, 27);
 }
 header #coverbilde img{
     width: 100%;
@@ -35,7 +36,7 @@ header #coverbilde h1{
     left: auto;
     right: 0%;
     width: 40%; 
-    position: absolute;
+    position: absolute; 
     background: none;
     font-size: 4vw;
 }
@@ -92,6 +93,10 @@ a:active {
 .scrolltop {
     display: none;
 }
+#scrolltop{
+    height: auto;
+}
+
 main{
     grid-area: m;
 }
@@ -111,5 +116,8 @@ footer{
     }
     nav li a {
        font-size: 34px;
+    }
+    #scrolltop{
+        height: 62px;
     }
   }
