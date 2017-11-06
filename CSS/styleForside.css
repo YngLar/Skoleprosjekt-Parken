@@ -1,12 +1,15 @@
 main{
     margin-top: 5%;
+    text-align: center;
 }
 #infoboks {
-    
+    position: relative;
+    display: table;
 }
 #infobilde {
     margin-left: 10%;
-    height: 400px;
-    width: auto;
+    height: auto;
+    width: 40%;
     border-radius: 10%;
+    float: left;
 }
