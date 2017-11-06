@@ -92,6 +92,7 @@ a:active {
 }
 .scrolltop {
     display: none;
+    z-index: 1;
 }
 #scrolltop{
     height: auto;
