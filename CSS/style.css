@@ -80,8 +80,8 @@ nav li a{
 nav li a:hover{
     background-color: #003b34;
 }
-a:active {
-    background-color: #003b34;
+nav li a.current{
+    background-color: #007767;
 }
 #scrolltop {
 	position: fixed;

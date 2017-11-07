@@ -1,15 +1,27 @@
 main{
-    margin-top: 5%;
     text-align: center;
+    margin-top: 5%;
+    margin-right: 8%;
+    margin-left: 8%;
 }
 #infoboks {
     position: relative;
     display: table;
+    text-align: justify;   
 }
-#infobilde {
-    margin-left: 10%;
+#infobilde { 
     height: auto;
     width: 40%;
     border-radius: 10%;
     float: left;
+}
+#infoh1 {
+    font-size: 5vw;
+    padding-bottom: 2%;
+    margin-right: 10%;
+}
+@media (min-width: 1000px){
+    main #infoh1 {
+        font-size: 40px;
+    }
 }
