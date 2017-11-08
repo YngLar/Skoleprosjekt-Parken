@@ -1,19 +1,22 @@
 main{
-    text-align: center;
+    text-align: left;
     margin-top: 5%;
     margin-right: 8%;
     margin-left: 8%;
 }
 #infoboks {
     position: relative;
-    display: table;
-    text-align: justify;   
+    text-align: justify;
+    display: table;   
 }
 #infobilde { 
     height: auto;
     width: 40%;
     border-radius: 10%;
     float: left;
+    }
+#bildediv {
+    margin-right: 10%;
 }
 #infoh1 {
     font-size: 5vw;
