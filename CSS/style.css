@@ -25,10 +25,17 @@ header #coverbilde{
     margin-bottom: 0;
     background-color: rgb(6, 29, 27);
 }
-header #coverbilde img{
+header .parkenbilde{
     width: 100%;
     height: 100%;
     flex: 1;
+}
+header #logo{
+    position: absolute;
+    background: none; 
+    height: 150px;
+    width: auto;
+    margin: 20px 20px;
 }
 header #coverbilde h1{
     display: block;
@@ -82,6 +89,8 @@ nav li a:hover{
 }
 nav li a.current{
     background-color: #007767;
+    border-bottom: 5px solid #003b34 ;
+    border-collapse: collapse;
 }
 #scrolltop {
 	position: fixed;

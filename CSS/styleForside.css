@@ -18,10 +18,15 @@ main{
 #bildediv {
     margin-right: 10%;
 }
+#bilde-info{
+    margin-left: 40%;
+}
+#tekst {
+    text-align: left;
+}
 #infoh1 {
     font-size: 5vw;
     padding-bottom: 2%;
-    margin-right: 10%;
 }
 @media (min-width: 1000px){
     main #infoh1 {
