@@ -1,0 +1,72 @@
+main{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 4%;
+}
+main img{
+    width: 14vw;
+    height: 14vw;
+    border-radius: 10%;
+    margin-left: 0%;
+    background: none;
+}
+main h2{
+    font-size: 3vw;
+    font-size: 3vmin;
+}
+main h3 {
+    font-size: 2vw;
+    font-size: 2vmin;
+}
+.artist{
+    display: inline-block;
+    margin-left: 2vw;
+}
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 14px;
+    transition: 0.2s;
+    font-size: 1.5vw;
+    font-size: 2vmin;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+#Dag1 .tabcontent {
+    display: block;
+}
+@media (min-width: 1000px){
+    div.tab button {
+        padding: 14px 18px;
+    }
+    div.tab button{
+        font-size: 25px;
+    }
+}
+@media (max-width: 1100px) {
+    .artist{
+        display: inline-block;
+        margin-left: 15vw;
+    }
+}

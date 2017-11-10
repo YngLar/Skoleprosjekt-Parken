@@ -33,9 +33,9 @@ header .parkenbilde{
 header #logo{
     position: absolute;
     background: none; 
-    height: 150px;
+    height: 15vw;
     width: auto;
-    margin: 20px 20px;
+    margin: 1vw 1vw;
 }
 header #coverbilde h1{
     display: block;
@@ -84,13 +84,12 @@ nav li a{
     -moz-transition: background .5s ease-in-out;
     -webkit-transition: background .5s ease-in-out;
 }
-nav li a:hover{
-    background-color: #003b34;
-}
 nav li a.current{
     background-color: #007767;
-    border-bottom: 5px solid #003b34 ;
-    border-collapse: collapse;
+    box-shadow: inset 0px -5px 0px #003b34 ;
+}
+nav li a:hover{
+    background-color: #003b34;
 }
 #scrolltop {
 	position: fixed;
@@ -121,6 +120,9 @@ footer{
     background-color: #00695C;
 }
 @media (min-width: 1000px) {
+    header #logo{
+        height: 200px;
+    }
     #wrapper {
        grid-template-rows: auto auto minmax(800px, auto) 100px;
     }
