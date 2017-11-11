@@ -1,32 +1,54 @@
-main{
-    text-align: left;
-    margin-top: 5%;
-    margin-right: 8%;
-    margin-left: 8%;
+main {
+    min-height: calc(100vh - 270px - 10vh);
 }
-#infoboks {
-    position: relative;
-    text-align: justify;
-    display: table;   
+main .overskrift {
+    margin-top: 10vh;
+    font-size: 50px;
+    text-align: center;
 }
-#infobilde { 
-    height: auto;
-    width: 40%;
-    border-radius: 10%;
-    float: left;
+
+main section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 3vh;
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main section .image-section img {
+    border-radius: 5vw;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+main section .image-section {
+    width: 50%;
+    padding: 3vw;
+}
+
+main section .text-section {
+    padding: 3vw;
+    width: 50%
+}
+
+@media (max-width: 1000px) {
+    main .overskrift{
+        margin-top: 5%;
+        font-size: 5vw;
     }
-#bilde-info{
-    margin-left: 40%;
-}
-#tekst {
-    text-align: left;
-}
-#infoh1 {
-    font-size: 5vw;
-    padding-bottom: 2%;
-}
-@media (min-width: 1000px){
-    main #infoh1 {
-        font-size: 40px;
+    main section {
+        flex-direction: column;
+
+    }
+
+    main section .image-section {
+        width: 100%;
+    }
+
+    main section .text-section {
+        width: 100%;
     }
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="no"><head>
+<html lang="no">
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -12,138 +13,139 @@
     <script src="../JS/fade.js"></script>
     <title>Parkenfestivalen 2018</title>
 </head>
-<body> 
-    <div id="wrapper">
-        <header>
-            <div id="coverbilde">
-                <img src="../Bilder/logo-uten.png" id="logo">
-                <img class="parkenbilde" src="../Bilder/Bakgrunn.jpg">
-                <h1><span>Parkenfestivalen</span><span> 2018</span><br></h1>
-            </div>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="forside.html">Info</a></li>
-                <li><a href="artister.html">Artister</a></li>
-                <li><a href="timeplan.html" class="current">Timeplan</a></li>
-                <li><a href="biletter.html">Biletter</a></li>
-            </ul>
-        </nav>
-        <nav class="scrolltop">
-            <ul id="scrolltop">
-                <li><a href="forside.html">Info</a></li>
-                <li><a href="artister.html">Artister</a></li>
-                <li><a href="timeplan.html" class="current">Timeplan</a></li>
-                <li><a href="biletter.html">Biletter</a></li>
-            </ul>
-        </nav>
-        <main>
-            <div class="timeplan">
-            <div class="tab">
-                <button class="tablinks" onclick="åpneDag(event, 'Dag1')">Dag 1</button>
-                <button class="tablinks" onclick="åpneDag(event, 'Dag2')">Dag 2</button>
-                <button class="tablinks" onclick="åpneDag(event, 'Dag3')">Dag 3</button>
-                <button class="tablinks" onclick="åpneDag(event, 'Dag4')">Dag 4</button>
-            </div>
-            
-            <div id="Dag1" class="tabcontent">
-                <div class="artist">
-                    <h2>19:00-21:00</h2>
-                    <h3>Øystein Ellingsen</h3>
-                    <img src="../Bilder/artist2.jpg">
-                </div>
-                <div class="artist">
-                    <h2>21:00-23:00</h2>
-                    <h3>Krappa</h3>
-                    <img src="../Bilder/artist3.jpg">
-                </div>
-                <div class="artist">
-                    <h2>23:00-01:00</h2>
-                    <h3>Alfa B-T</h3>
-                    <img src="../Bilder/artist1.jpg">
-                </div>
-                <div class="artist">
-                    <h2>01:00-03:00</h2>
-                    <h3>Øystein Ellingsen</h3>
-                    <img src="../Bilder/artist2.jpg">
-                </div>
-            </div>
+<body>
 
-            <div id="Dag2" class="tabcontent">
-                <div class="artist">
-                    <h2>19:00-21:00</h2>
-                    <h3>Alfa B-T</h3>
-                    <img src="../Bilder/artist1.jpg">
-                </div>
-                <div class="artist">
-                    <h2>21:00-23:00</h2>
-                    <h3>Krappa</h3>
-                    <img src="../Bilder/artist3.jpg">
-                </div>
-                <div class="artist">
-                    <h2>23:00-01:00</h2>
-                    <h3>Øystein Ellingsen</h3>
-                    <img src="../Bilder/artist2.jpg">
-                </div>
-                <div class="artist">
-                    <h2>01:00-03:00</h2>
-                    <h3>TriHex</h3>
-                    <img src="../Bilder/artist4.jpg">
-                </div>
-            </div>
-            
-            <div id="Dag3" class="tabcontent">
-                <div class="artist">
-                    <h2>19:00-21:00</h2>
-                    <h3>Krappa</h3>
-                    <img src="../Bilder/artist3.jpg">
-                </div>
-                <div class="artist">
-                    <h2>21:00-23:00</h2>
-                    <h3>Øystein Ellingsen</h3>
-                    <img src="../Bilder/artist2.jpg">
-                </div>
-                <div class="artist">
-                    <h2>23:00-01:00</h2>
-                    <h3>Øystein Ellingsen</h3>
-                    <img src="../Bilder/artist2.jpg">
-                </div>
-                <div class="artist">
-                    <h2>01:00-03:00</h2>
-                    <h3>TriHex</h3>
-                    <img src="../Bilder/artist4.jpg">
-                </div>
-            </div>
+<header>
+    <img id="logo" src="../Bilder/logo-uten.png"/>
+    <img id="coverImage" src="../Bilder/Bakgrunn.jpg"/>
+    <h2 id="headerText">Parkenfestivalen 2018</h2>
+</header>
 
-            <div id="Dag4" class="tabcontent">
-                <div class="artist">
-                    <h2>19:00-21:00</h2>
-                    <h3>Krappa</h3>
-                    <img src="../Bilder/artist3.jpg">
-                </div>
-                <div class="artist">
-                    <h2>21:00-23:00</h2>
-                    <h3>Øystein Ellingsen</h3>
-                    <img src="../Bilder/artist2.jpg">
-                </div>
-                <div class="artist">
-                    <h2>23:00-01:00</h2>
-                    <h3>TriHex</h3>
-                    <img src="../Bilder/artist4.jpg">
-                </div>
-                <div class="artist">
-                    <h2>01:00-03:00</h2>
-                    <h3>Øystein Ellingsen</h3>
-                    <img src="../Bilder/artist2.jpg">
-                </div>
-                <script>
-                        document.getElementById("Dag1").click(); //Ville at Dag1 skulle åpnes som standard
-                </script>
+<nav>
+    <ul id="navbar">
+        <li><a href="forside.html">Info</a></li>
+        <li><a href="artister.html">Artister</a></li>
+        <li class="current"><a href="timeplan.html">Timeplan</a></li>
+        <li><a href="biletter.html">Biletter</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div class="timeplan">
+        <div class="tab">
+            <button class="tablinks" onclick="åpneDag(event, 'Dag1')">Dag 1</button>
+            <button class="tablinks" onclick="åpneDag(event, 'Dag2')">Dag 2</button>
+            <button class="tablinks" onclick="åpneDag(event, 'Dag3')">Dag 3</button>
+            <button class="tablinks" onclick="åpneDag(event, 'Dag4')">Dag 4</button>
+        </div>
+
+        <div id="Dag1" class="tabcontent">
+            <div class="artist">
+                <h2>19:00-21:00</h2>
+                <h3>Øystein Ellingsen</h3>
+                <img src="../Bilder/artist2.jpg">
             </div>
+            <div class="artist">
+                <h2>21:00-23:00</h2>
+                <h3>Krappa</h3>
+                <img src="../Bilder/artist3.jpg">
             </div>
-        </main>
-        <footer>
-            Footer
-        </footer>
-    </div>  
-</body></html>
+            <div class="artist">
+                <h2>23:00-01:00</h2>
+                <h3>Alfa B-T</h3>
+                <img src="../Bilder/artist1.jpg">
+            </div>
+            <div class="artist">
+                <h2>01:00-03:00</h2>
+                <h3>Øystein Ellingsen</h3>
+                <img src="../Bilder/artist2.jpg">
+            </div>
+        </div>
+
+        <div id="Dag2" class="tabcontent">
+            <div class="artist">
+                <h2>19:00-21:00</h2>
+                <h3>Alfa B-T</h3>
+                <img src="../Bilder/artist1.jpg">
+            </div>
+            <div class="artist">
+                <h2>21:00-23:00</h2>
+                <h3>Krappa</h3>
+                <img src="../Bilder/artist3.jpg">
+            </div>
+            <div class="artist">
+                <h2>23:00-01:00</h2>
+                <h3>Øystein Ellingsen</h3>
+                <img src="../Bilder/artist2.jpg">
+            </div>
+            <div class="artist">
+                <h2>01:00-03:00</h2>
+                <h3>TriHex</h3>
+                <img src="../Bilder/artist4.jpg">
+            </div>
+        </div>
+
+        <div id="Dag3" class="tabcontent">
+            <div class="artist">
+                <h2>19:00-21:00</h2>
+                <h3>Krappa</h3>
+                <img src="../Bilder/artist3.jpg">
+            </div>
+            <div class="artist">
+                <h2>21:00-23:00</h2>
+                <h3>Øystein Ellingsen</h3>
+                <img src="../Bilder/artist2.jpg">
+            </div>
+            <div class="artist">
+                <h2>23:00-01:00</h2>
+                <h3>Øystein Ellingsen</h3>
+                <img src="../Bilder/artist2.jpg">
+            </div>
+            <div class="artist">
+                <h2>01:00-03:00</h2>
+                <h3>TriHex</h3>
+                <img src="../Bilder/artist4.jpg">
+            </div>
+        </div>
+
+        <div id="Dag4" class="tabcontent">
+            <div class="artist">
+                <h2>19:00-21:00</h2>
+                <h3>Krappa</h3>
+                <img src="../Bilder/artist3.jpg">
+            </div>
+            <div class="artist">
+                <h2>21:00-23:00</h2>
+                <h3>Øystein Ellingsen</h3>
+                <img src="../Bilder/artist2.jpg">
+            </div>
+            <div class="artist">
+                <h2>23:00-01:00</h2>
+                <h3>TriHex</h3>
+                <img src="../Bilder/artist4.jpg">
+            </div>
+            <div class="artist">
+                <h2>01:00-03:00</h2>
+                <h3>Øystein Ellingsen</h3>
+                <img src="../Bilder/artist2.jpg">
+            </div>
+            <script>
+                document.getElementById("Dag1").click(); //Ville at Dag1 skulle åpnes som standard
+            </script>
+        </div>
+    </div>
+</main>
+<footer>
+    <h1>Våre sponsorer</h1>
+    <div id="sponsors">
+        <img src="../Bilder/artist4.jpg">
+        <img src="../Bilder/artist4.jpg">
+        <img src="../Bilder/artist4.jpg">
+        <img src="../Bilder/artist4.jpg">
+        <img src="../Bilder/artist4.jpg">
+
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,30 +1,64 @@
-main{
+main {
+    min-height: calc(100vh - 270px - 10vh);
+}
+
+main .artists section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 3vh;
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main section .image-section img {
+    border-radius: 5vw;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+main section .image-section {
+    width: 40%;
+    padding: 3vw;
+}
+
+main section .text-section {
+    padding: 3vw;
+    width: 60%
+}
+
+#artistHeader {
+    margin: 0 auto;
     text-align: center;
-    margin-top: 5%;
+    font-size: 15px;
+    margin-top: 30px;
+    color: black;
 }
-main #overskrift {
-    font-size: 5vw;
-    padding-bottom: 5%;
-}
-main #artist {
-    padding-bottom: 30px;
-    position: relative;
-    display: table;
-}
-main #overskrift-artist{
-    padding-left: 40px;
-    font-size: 3vw;
-    font-size: 3vmin;
-}
-main #artistbilde {
-    width: 25%;
-    height: auto;
-    border-radius: 10%;
-    float: left;
-    margin-left: 20%;
-}
-@media (min-width: 1000px){
-    main #overskrift {
-        font-size: 50px;
+
+@media (min-width: 1000px) {
+    main .artists section:nth-child(even) .text-section {
+        order: 1
     }
+
+    main .artists section:nth-child(even) .image-section {
+        order: 2
+    }
+}
+
+@media (max-width: 1000px) {
+    main .artists section {
+        flex-direction: column;
+    }
+
+    main section .image-section {
+        width: 100%;
+    }
+
+    main section .text-section {
+        padding: 3vw;
+        width: 100%
+    }
+
 }

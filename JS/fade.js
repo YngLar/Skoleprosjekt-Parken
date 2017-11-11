@@ -1,19 +1,5 @@
 
-$(window).scroll(function() {
-
-    if ($(this).scrollTop()> $(".parkenbilde").height()) {
-    $('nav').fadeIn();
-    }
-
-    else {
-    $('.scrolltop').fadeOut();
-    }
- });
- $(window).scroll(function(){
-    $("#coverbilde").css("opacity", 1 - $(window).scrollTop() / $(".parkenbilde").height());
-  });
-
-  function åpneDag(evt, dag) {
+function åpneDag(evt, dag) {
 
     var i, tabcontent, tablinks;
 
@@ -27,6 +13,6 @@ $(window).scroll(function() {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
 
-    document.getElementById(dag).style.display = "block";
+    document.getElementById(dag).style.display = "flex";
     evt.currentTarget.className += " active";
 }
